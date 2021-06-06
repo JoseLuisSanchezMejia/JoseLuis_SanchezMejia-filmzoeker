@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Film Zoeker</title>
+    <link rel="stylesheet" type="text/css" href="movieStijl.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <video  class="backgroundvideo" autoplay loop muted>
+        <source src="videoimage.mp4" type="video/mp4">
+      </video>
+      <h1 class="welkom">Welkom bij onze filmzoeker!</h1>
+
+      <nav class="filterWrapper">
+        <label for="filter0">Alle Films <input type="radio" class="rButtons" name="filter" id="filter0" value ="Alle films">
+        </label>
+        <label for="filter1">Nieuwste Films, vanaf 2014 <input type="radio" class="rButtons" name="filter" id="filter1" value ="laatste films, 2014 of nieuwer">
+        </label>
+        <label for="filter2">Avenger Films <input type="radio" class="rButtons" name="filter" id="filter2" value ="avenger-films"> 
+        </label>
+        <label for="filter3">X-men Films <input type="radio" class="rButtons" name="filter" id="filter3" value ="x-men-films">
+        </label>
+        <label for="filter4">Princess Films <input type="radio" class="rButtons" name="filter" id="filter4" value ="princess-films">
+        </label>
+        <label for="filter5">Batman Films <input type="radio" class="rButtons" name="filter" id="filter5" value ="batman-films">
+        </label>
+        <label for="zoek"> Zoek op titel...<input type="text" class="rButtons" name="zoek" id="zoek" value="">
+        </label>
+      </nav>
+
+      <main>
+        <ul id="masterLijst">
+        </ul>
+      </main>
+    </div>
+
+    <script type="module" defer src="script.js"></script>
+  </body>
+
+</html>

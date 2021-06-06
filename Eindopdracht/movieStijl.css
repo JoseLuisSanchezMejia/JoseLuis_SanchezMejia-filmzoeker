@@ -1,0 +1,73 @@
+* {
+  clear: both;
+  margin: 0px;
+}
+body {
+  background-color: black;
+  color: goldenrod;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.backgroundvideo {
+  position: absolute;
+  top: 0px;
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+.welkom {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  margin: auto;
+}
+.filterWrapper {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  margin-right: 5px;
+  margin-left: 45px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-family: "Times New Roman";
+  color: whitesmoke;
+  font-weight: bolder;
+  z-index: 1;
+  width: 95%;
+}
+
+#masterLijst {
+  position: absolute;
+  margin: 0px;
+  padding-left: 0px;
+  top: 150px;
+}
+
+main {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+img {
+  margin: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+img:hover {
+  border: 2px goldenrod solid;
+}
+#zoek:focus {
+  border: 3px solid darkblue;
+}
